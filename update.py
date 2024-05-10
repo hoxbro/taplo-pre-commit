@@ -44,10 +44,10 @@ def main():
     with open(READMEFILE, "w") as f:
         f.write(readme)
 
-    # run(["git", "add", HOOKFILE, READMEFILE], check=True)
-    # run(["git", "commit", "-m", f"Update to version {version}"], check=True)
-    # run(["git", "tag", f"v{version}"], check=True)
-    # run(["git", "push", "origin"], check=True)
+    run(["git", "add", HOOKFILE, READMEFILE], check=True)
+    run(["git", "commit", "-m", f"Update to version {version}"], check=True)
+    run(["git", "tag", f"v{version}"], check=True)
+    run(["git", "push", "origin"], check=True)
     # run(["git", "push", "origin", "--tags"], check=True)
 
 
