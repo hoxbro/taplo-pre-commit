@@ -22,7 +22,7 @@ def main():
       types: [text]
       args: []
       require_serial: false
-      additional_dependencies: ["taplo/cli@{version}"]
+      additional_dependencies: ["@taplo/cli@{version}"]
       minimum_pre_commit_version: "0"
       """
     hook = dedent(hook)
