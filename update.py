@@ -48,7 +48,7 @@ def main():
     run(["git", "commit", "-m", f"Update to version {version}"], check=True)
     run(["git", "tag", f"v{version}"], check=True)
     run(["git", "push", "origin"], check=True)
-    # run(["git", "push", "origin", "--tags"], check=True)
+    run(["git", "push", "origin", "--tags"], check=True)
 
 
 if __name__ == "__main__":
