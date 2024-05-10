@@ -1,9 +1,9 @@
 - id: taplo
   name: taplo
   description: ""
-  entry: taplo
+  entry: taplo fmt
   language: node
-  types: [text]
+  types: [toml]
   args: []
   require_serial: false
   additional_dependencies: ["@taplo/cli@0.7.0"]
