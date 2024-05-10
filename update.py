@@ -17,7 +17,7 @@ def main():
     - id: taplo
       name: taplo
       description: ""
-      entry: taplo
+      entry: taplo fmt
       language: node
       types: [toml]
       args: []
