@@ -1,0 +1,10 @@
+- id: taplo
+  name: taplo
+  description: ""
+  entry: taplo
+  language: node
+  types: [text]
+  args: []
+  require_serial: false
+  additional_dependencies: ["taplo/cli@0.7.0"]
+  minimum_pre_commit_version: "0"
