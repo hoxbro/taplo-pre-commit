@@ -19,7 +19,7 @@ def main():
       description: ""
       entry: taplo
       language: node
-      types: [text]
+      types: [toml]
       args: []
       require_serial: false
       additional_dependencies: ["@taplo/cli@{version}"]
