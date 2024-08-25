@@ -4,25 +4,25 @@ from textwrap import dedent
 
 import httpx
 
-URL = "https://registry.npmjs.org/@taplo/cli/latest"
+URL = "https://pypi.org/pypi/taplo/json"
 HOOKFILE = ".pre-commit-hooks.yaml"
 READMEFILE = "README.md"
 
 
 def main():
     resp = httpx.get(URL).raise_for_status()
-    version = resp.json()["version"]
+    version = resp.json()["info"]["version"]
 
     hook = f"""\
     - id: taplo
       name: taplo
       description: ""
       entry: taplo fmt
-      language: node
+      language: python
       types: [toml]
       args: []
       require_serial: false
-      additional_dependencies: ["@taplo/cli@{version}"]
+      additional_dependencies: ["taplo=={version}"]
       minimum_pre_commit_version: "0"
       """
     hook = dedent(hook)
