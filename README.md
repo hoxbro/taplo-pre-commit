@@ -10,7 +10,7 @@ Add this to your `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/hoxbro/taplo-pre-commit
-  rev: v0.7.0
+  rev: v0.9.3
   hooks:
     - id: taplo
 ```
